@@ -1,21 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component } from 'react';
+import { AppRegistry, View } from 'react-native';
+// import Routes from './Routes.js'
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+class tetraLoungeApp extends Component {
+   render() {
+      return (
+        <section>
+          <p>Made it</p>
+        </section>
+        //  <Routes />
+      )
+   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default tetraLoungeApp
+AppRegistry.registerComponent('tetraLoungeApp', () => tetraLoungeApp)

@@ -1,0 +1,12 @@
+import React from 'react'
+import { Router, Scene } from 'react-native-router-flux'
+import HomePage from '/Users/trondmakonese/Tetra/TetraProject/HomePage/HomePage.js'
+
+const Routes = () => (
+   <Router>
+      <Scene key = "root">
+         <Scene key = "HomePage" component = {HomePage} title = "HomePage" initial = {true} />
+      </Scene>
+   </Router>
+)
+export default Routes
